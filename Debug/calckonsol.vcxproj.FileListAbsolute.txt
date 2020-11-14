@@ -1,2 +1,0 @@
-C:\Users\borys\source\repos\calckonsol\Debug\calckonsol.exe
-C:\Users\borys\source\repos\calckonsol\Debug\calckonsol.pdb
