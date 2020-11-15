@@ -4,7 +4,6 @@
 #include <math.h>
 #include <string>
 #include <iomanip>
-#pragma comment(lib, "winmm.lib")
 
 using namespace std;
 
@@ -415,16 +414,11 @@ int main()
                 inf_gl_func();                
 				if (interpreter(f) == 0)
 				{
-					
-		
-					if (PlaySound((LPCTSTR)SND_ALIAS_SYSTEMSTART, NULL, SND_ALIAS_ID) == 0)
-					{
-						std::cout << "O return play sound";
-					}
+					Beep(1480, 50); 
 				}
 				else
 				{ 
-					Beep(1480, 50);
+					PlaySound(TEXT("erro.wav"), NULL, SND_FILENAME | SND_ASYNC);
 				}
                 goto pocz_2;
                 break;
